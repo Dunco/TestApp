@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">TestApp</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="app_name">Cell Identifier</string>
+    <string name="button_allcellcount"> Total Cell Count</string>
+    <string name="button_wcdmacount">Wcdma Count</string>
+    <string name="button_gsmcount">Gsm Count</string>
     <string name="action_settings">Settings</string>
 
 </resources>

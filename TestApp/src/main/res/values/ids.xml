@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="button_wcdmacount" type="id">button_wcdmacount</item>
+    <item name="button_gsmcount" type="id">button_gsmcount</item>
+    <item name="button_allcellcount" type="id">button_allcellcount</item>
+</resources>

@@ -8,9 +8,30 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".MainActivity$PlaceholderFragment">
 
-    <TextView
-        android:text="@string/hello_world"
+    <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:id="@id/button_allcellcount"
+        android:layout_gravity="center"
+        android:text="@string/button_allcellcount"
+        android:onClick="getAllCellCount"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_gsmcount"
+        android:id="@id/button_gsmcount"
+        android:layout_gravity="center_horizontal|top"
+        android:onClick="getGsmCount"
+        android:layout_below="@id/button_allcellcount"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_wcdmacount"
+        android:id="@id/button_wcdmacount"
+        android:layout_gravity="center_horizontal|bottom"
+        android:onClick="getWcdmaCount"
+        android:layout_below="@id/button_gsmcount"/>
 
 </RelativeLayout>

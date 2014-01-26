@@ -1,15 +1,15 @@
 package com.example.testapp;
 
 import android.app.Activity;
-import android.app.ActionBar;
 import android.app.Fragment;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.os.Build;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -62,4 +62,37 @@ public class MainActivity extends Activity {
         }
     }
 
+    public void getAllCellCount(View view) {
+        CellInfoGather cellInfoGather = new CellInfoGather(this);
+        int cellCount = cellInfoGather.allCells().size();
+        Context context = this;
+        CharSequence text = "Total Cells: " + cellCount;
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
+    }
+
+    public void getWcdmaCount(View view){
+        CellInfoGather cellInfoGather = new CellInfoGather(this);
+        int cellCount = cellInfoGather.wcdmaCells().size();
+        Context context = this;
+        CharSequence text = "WCDMA Cells: " + cellCount;
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
+    }
+
+    public void getGsmCount(View view){
+        CellInfoGather cellInfoGather = new CellInfoGather(this);
+        int cellCount = cellInfoGather.gsmCells().size();
+        Context context = this;
+        CharSequence text = "GSM Cells: " + cellCount;
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
+
+    }
 }
